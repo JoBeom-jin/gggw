@@ -49,7 +49,7 @@ public class MyPageFragment extends Fragment {
 
         // 쿼리
         RealmResults<English> results = realm.where(English.class)
-                .sort("english", Sort.DESCENDING).findAll();
+                .sort("english", Sort.ASCENDING).findAll();
 
         EnglishRecyclerAdapter adapter = new EnglishRecyclerAdapter(results);
         mRecyclerView.setAdapter(adapter);
@@ -60,8 +60,6 @@ public class MyPageFragment extends Fragment {
                 String english = mNameEditText.getText().toString();
                 String text = mAgeEditText.getText().toString();
 
-
-
                 // DB에 저장
                 realm.beginTransaction();
                 English english1 = realm.createObject(English.class);
@@ -70,8 +68,6 @@ public class MyPageFragment extends Fragment {
                 realm.commitTransaction();
             }
         });
-
-
 
 
         return rootView;

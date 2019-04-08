@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="dark">#1f1f1f</color>
+    <color name="tabback">#cef99b</color>
 
 </resources>

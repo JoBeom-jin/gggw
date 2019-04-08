@@ -2,6 +2,7 @@ package com.androidproject;
 
 import android.content.pm.PackageManager;
 
+import android.graphics.Color;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.TabLayout;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
         tabLayout = findViewById(R.id.tab);
+
 
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
