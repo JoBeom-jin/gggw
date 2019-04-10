@@ -69,7 +69,7 @@ public class ReviewFragment extends Fragment {
 
                 Collections.shuffle(englishList);
                 eng.setText(englishList.get(0).getEnglish());
-                kor.setText(englishList.get(0).getText());
+
             }
         });
 

@@ -23,6 +23,7 @@ public class goal_popup extends Activity {
             goal_editor.putString("my_goal", goal_edit.getText().toString());
             goal_editor.commit();
             Intent i = new Intent(getApplicationContext(), HomeFragment.class);
+            startActivity(i);
             finish();
 
         }
